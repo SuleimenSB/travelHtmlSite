@@ -1,0 +1,83 @@
+@font-face {
+  font-family: "Ribeye";
+  src: url("../assets/fonts/Ribeye-Regular.woff") format("woff");
+  font-style: normal;
+  font-weight: 400;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.header__navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  min-height: 100px;
+}
+
+.header__title {
+  width: 124px;
+  font-family: "Ribeye";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  color: #f5f;
+  align-items: center;
+  min-height: 100px;
+  display: flex;
+}
+
+.header__menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-right: 125px;
+}
+
+.header__menu>ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.header__menu>ul {
+  list-style-type: none;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  margin-right: 172px;
+}
+
+.header__menu>ul>li>a {
+  text-decoration: none;
+  color: #f5f;
+  margin-right: 50px;
+}
+
+.header__menu>ul>li>a:hover {
+  text-decoration: underline;
+}
+
+.header__menu-btn>button {
+  font-family: "Roboto";
+  background: #C9453B;
+  border-radius: 5px;
+  border: none;
+  color: #f6f6f6;
+  width: 163px;
+  height: 51px;
+  font-size: 16px;
+}
+
+@media screen and (max-width: 800px {
+  
+}
