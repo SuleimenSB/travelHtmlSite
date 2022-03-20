@@ -5,37 +5,94 @@
   font-weight: 400;
 }
 
+@font-face {
+  font-family: "Roboto";
+  src: url("../assets/fonts/Roboto-Regular.woff") format("woff");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../assets/fonts/Roboto-Medium.woff") format("woff");
+  font-style: normal;
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../assets/fonts/Roboto-Bold.woff") format("woff");
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Gelasio";
+  src: url("../assets/fonts/Gelasio-Regular.woff") format("woff");
+  font-style: normal;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Gelasio";
+  src: url("../assets/fonts/Gelasio-Medium.woff") format("woff");
+  font-style: normal;
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Gelasio";
+  src: url("../assets/fonts/Gelasio-Bold.woff") format("woff");
+  font-style: normal;
+  font-weight: 700;
+}
+
 * {
+  /* Блочная модель */
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
 .container {
+  /* Блочная модель */
   max-width: 1300px;
   margin: 0 auto;
 }
 
+header {
+  /* Оформление */
+  background-image: url("../assets/img/header__img-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .header__navbar {
+  /* Блочная модель */
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   min-height: 100px;
+  margin-bottom: 208px;
 }
 
 .header__title {
+  /* Блочная модель */
+  align-items: center;
+  min-height: 100px;
+  display: flex;
   width: 124px;
+
+  /* Типографика */
   font-family: "Ribeye";
   font-style: normal;
   font-weight: normal;
   font-size: 24px;
-  color: #f5f;
-  align-items: center;
-  min-height: 100px;
-  display: flex;
+  color: #f6f6f6;
 }
 
 .header__menu {
+  /* Блочная модель */
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -43,41 +100,129 @@
 }
 
 .header__menu>ul {
+  /* Блочная модель */
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
 .header__menu>ul {
+  /* Блочная модель */
+  margin-right: 172px;
   list-style-type: none;
+
+  /* Типографика */
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
-  margin-right: 172px;
 }
 
 .header__menu>ul>li>a {
-  text-decoration: none;
-  color: #f5f;
+  /* Блочная модель */
   margin-right: 50px;
+
+  /* Типографика */
+  text-decoration: none;
+  color: #f6f6f6;
 }
 
 .header__menu>ul>li>a:hover {
+  /* Типографика */
   text-decoration: underline;
 }
 
 .header__menu-btn>button {
+  /* Блочная модель */
+  width: 163px;
+  height: 51px;
+
+  /* Типографика */
   font-family: "Roboto";
+  color: #f6f6f6;
+  font-size: 16px;
+
+  /* Оформление */
   background: #C9453B;
   border-radius: 5px;
   border: none;
-  color: #f6f6f6;
-  width: 163px;
-  height: 51px;
-  font-size: 16px;
 }
 
-@media screen and (max-width: 800px {
-  
+.railtrips {
+  display: flex;
+  flex-direction: column;
+}
+
+.railtrips__title {
+  /* Блочная модель */
+  margin-bottom: 30px;
+  max-width: 805px;
+
+  /* Типографика */
+  font-family: 'Gelasio';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 65px;
+  color: #f6f6f6;
+}
+
+.railtrips__description {
+  /* Блочная модель */
+  margin-bottom: 40px;
+  max-width: 400px;
+
+  /* Типографика */
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 160%;
+  color: #FFFFFF;
+  opacity: 60%;
+}
+
+.railtrips__btn>button {
+  /* Блочная модель */
+  padding: 18px 47px;
+  max-width: 188px;
+  margin-bottom: 244px;
+
+  /* Оформление */
+  background: #C9453B;
+  border-radius: 5px;
+  border: none;
+
+  /* Типографика */
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #FFFFFF;
+
+}
+
+@media screen and (max-width: 800px) {
+  header {
+    /* Блочная модель */
+    padding: 0 15px;
+    height: 100%;
+  }
+
+  .header__title,
+  .header__menu,
+  .header__menu-btn {
+    /* Блочная модель */
+    display: none;
+  }
+
+  .railtrips {
+    /* Блочная модель */
+    align-items: center;
+  }
+
+  .railtrips__title {
+    /* Типографика */
+    font-size: 54px;
+  }
 }
