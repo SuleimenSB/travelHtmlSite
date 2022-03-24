@@ -58,6 +58,7 @@
   /* Блочная модель */
   max-width: 1140px;
   margin: 0 auto;
+  margin-bottom: 140px;
 }
 
 header {
@@ -65,6 +66,7 @@ header {
   background-image: url("../assets/img/header__img-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
+  margin-bottom: 140px;
 }
 
 .header__navbar {
@@ -154,7 +156,7 @@ header {
   flex-direction: column;
 }
 
-.railtrips__title {
+h1 {
   /* Блочная модель */
   margin-bottom: 30px;
   max-width: 805px;
@@ -200,7 +202,173 @@ header {
   font-size: 16px;
   line-height: 150%;
   color: #FFFFFF;
+}
 
+.location__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 35px;
+}
+
+
+h2 {
+  font-family: 'Gelasio';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 43px;
+  line-height: 140%;
+  color: #000000;
+  margin-bottom: 20px;
+}
+
+.location__wrapper-description {
+  max-width: 735px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 160%;
+  text-align: center;
+  color: #000000;
+  opacity: 60%;
+}
+
+.about {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.about__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  box-shadow: 0px 6px 35px rgba(0, 0, 0, 0.08);
+  border-radius: 10px;
+}
+
+h3 {
+  padding-top: 35px;
+  font-family: 'Gelasio';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 150%;
+  text-align: center;
+  color: #000000;
+}
+
+.about__wrapper-description {
+  padding-bottom: 35px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 160%;
+  text-align: center;
+  color: #000000;
+  opacity: 0.6;
+  max-width: 306px;
+}
+
+.from__wrapper-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 56px;
+}
+
+.from__wrapper-description {
+  max-width: 580px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 160%;
+  text-align: center;
+  color: #000000;
+  opacity: 0.6;
+}
+
+.from__content {
+  display: flex;
+  justify-content: space-around;
+}
+
+.from__content-wrapper>img {
+  margin-bottom: 35px;
+}
+
+.from__item>img {
+  margin-right: 27px;
+}
+
+.from__item {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  margin-bottom: 30px;
+}
+
+.from__item_wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h4 {
+  font-family: 'Gelasio';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 160%;
+  color: #000000;
+  margin-bottom: 10px;
+}
+
+.from__content-wrapper-description {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 160%;
+  color: #000000;
+  opacity: 0.6;
+  margin-bottom: 10px;
+  max-width: 470px;
+}
+
+.from__content-wrapper-bottom {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 150%;
+  color: #000000;
+}
+
+.from__item-description {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 160%;
+  color: #000000;
+  opacity: 0.6;
+  max-width: 243px;
+}
+
+.from__item-bottom {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 150%;
+  color: #000000;
+  opacity: 0.8;
 }
 
 @media screen and (max-width: 800px) {
@@ -210,12 +378,27 @@ header {
     height: 100%;
   }
 
+  h1 {
+    font-size: 42px;
+  }
+
   .header__title,
   .header__menu,
   .header__menu-btn {
     /* Блочная модель */
     display: none;
   }
+
+  .about {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about__wrapper {
+    max-width: 360px;
+    margin-bottom: 30px;
+  }
+
 
   .railtrips {
     /* Блочная модель */
@@ -225,5 +408,33 @@ header {
   .railtrips__title {
     /* Типографика */
     font-size: 54px;
+  }
+
+  .from__content-wrapper {
+    margin-bottom: 40px;
+  }
+
+  .from__content-wrapper>img {
+    max-width: 370px;
+  }
+
+  .from__item {
+    flex-direction: column;
+  }
+
+  .from__item>img {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .from__content {
+    flex-direction: column;
+  }
+
+  .from__content-wrapper {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    text-align: center;
   }
 }
